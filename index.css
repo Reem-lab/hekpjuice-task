@@ -24,6 +24,7 @@ body {
 
 .top-navbar {
   background-image: url('./images/Rectangle\ 85.svg');
+
   /* background-repeat: no-repeat; */
   list-style: none;
   color: #f1f9ff;
@@ -390,7 +391,6 @@ body {
   padding-top: 90px;
 }
 
-
 .tertiary-heading {
   font-weight: 700;
   font-size: 48px;
@@ -407,28 +407,25 @@ body {
   width: 1600px;
 }
 
-.cards::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #EAECF0;
+.cards::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #eaecf0;
 }
 
 .cards::-webkit-scrollbar {
-	width: 1200px;
-	background-color: #EAECF0;
+  width: 1200px;
+  background-color: #eaecf0;
 }
 
-.cards::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+.cards::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-image: url('./images/Rectangle\ 84.svg');
   background-repeat: no-repeat;
-	/* background-color: #EAECF0; */
+
+  /* background-color: #EAECF0; */
 }
-
-
 
 .p-cards {
   font-weight: 425;
@@ -569,6 +566,7 @@ body {
     position: absolute;
     left: 760px;
   }
+
   .thirdNav {
     padding-left: 755px;
   }
