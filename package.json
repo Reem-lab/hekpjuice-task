@@ -1,15 +1,6 @@
 {
-  "name": "helpjuice-task",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "hint": "^7.1.8",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",

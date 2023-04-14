@@ -152,7 +152,7 @@ body {
   gap: 17px;
   cursor: pointer;
   justify-content: flex-start;
-  padding-left: 660px;
+  padding-left: 675px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(0.25turn, #0b0f27, #070512, #070512, #070512, #070512, #100929, #0e529e);
 }
@@ -183,7 +183,7 @@ body {
 
 .neon1 {
   position: relative;
-  left: 225px;
+  left: 262px;
   top: -46px;
 }
 
