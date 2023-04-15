@@ -13,8 +13,9 @@
 
 
 
-<!-- ## Deploy Demo 🚀 -->
+## Deploy Demo 🚀
 
+[Live Demo](https://reem-lab.github.io/hekpjuice-task/)
 
 
 
