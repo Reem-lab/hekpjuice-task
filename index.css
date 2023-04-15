@@ -404,8 +404,6 @@ body {
 
 .cards {
   overflow-x: scroll;
-  border: 1px solid red;
-  /* width: -webkit-fill-available; */
 }
 
 .wrap--cards {
@@ -453,6 +451,7 @@ body {
 
 .first-card {
   background: #0560fc;
+  margin-left: 350px;
 }
 
 .second-card {
@@ -563,6 +562,7 @@ body {
   top: -2px;
 }
 
+
 @media screen and (min-width: 2350px) {
   .platforms-section {
     padding-left: 870px;
@@ -576,4 +576,16 @@ body {
   .thirdNav {
     padding-left: 755px;
   }
+
+  .wrap--cards {
+    margin-left: 0;
+  }
+
+  .cards {
+    overflow-x: hidden;
+    width: 2180px;
+    margin-left: -541px;
+  }
+
 }
+
