@@ -127,6 +127,8 @@ body {
   height: 20px;
   background-color: #060511;
   border: none;
+  outline: none;
+  color: #ffffff;
 }
 
 .input--form::placeholder {
@@ -250,8 +252,13 @@ body {
   box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03);
   border-radius: 12px;
   position: relative;
-  left: -430px;
-  top: -323px;
+  left: 280px;
+  top: -280px;
+}
+
+.rightSideImg-hidden {
+  position: relative;
+  left: -386px;
 }
 
 .meetingImg {
@@ -263,9 +270,10 @@ body {
   background: #101828;
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 16px;
-  left: 389px;
-  top: 13px;
+  left: 381px;
+  top: -5px;
   padding: 5px;
+  cursor: pointer;
 }
 
 .secondary--heading {
@@ -300,6 +308,7 @@ body {
   border-radius: 6px;
   font-size: 14px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .first--btn {
@@ -309,11 +318,19 @@ body {
   font-weight: 700;
 }
 
+.first--btn:hover {
+  background-color: #0556e3;
+}
+
 .second--btn {
   background: #fff;
   border: 1px solid #d0d5dd;
   color: #344054;
   font-weight: 600;
+}
+
+.second--btn:hover {
+  background-color: #e6e6e6;
 }
 
 .leftSide-img {
@@ -570,6 +587,18 @@ body {
   display: none;
 }
 
+.closebtn {
+  cursor: pointer;
+}
+
+.display-hidden {
+   display: none;
+}
+
+.menu-nav {
+  display: none;
+}
+
 @media screen and (min-width: 2350px) {
   .platforms-section {
     padding-left: 870px;
@@ -595,9 +624,10 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 490px) {
   .top-navbar {
-    display: none;
+    height: 67px;
+    padding: 23px;
   }
 
   .overflow-hidden {
@@ -605,15 +635,42 @@ body {
   }
 
   .main-nav-active {
-    transform: translateX(0%);
+    transform: translateX(0%) !important;
+  }
+
+  .rightSide-img {
+    width: 350px;
+    left: 409px;
+    top: -619px;
+    height: 473px;
+  }
+
+  .closeBtn-icon {
+    left: 297px;
+  }
+
+  .meetingImg, 
+  .meeting-text {
+    width: 315px;
+  }
+
+  .schedule-btn,
+  .startFree-btn {
+    width: 290px;
+    padding-left: 0;
+  }
+
+
+  .rightSideImg-hidden {
+    left: -420px;
   }
 
   .exit {
     width: 23px;
     height: 26px;
     position: relative;
-    left: 126px;
-    top: -28px;
+    left: 188px;
+    top: 26px;
     display: block;
     cursor: pointer;
   }
@@ -624,8 +681,10 @@ body {
     display: block;
     cursor: pointer;
     position: relative;
-    left: 318px;
-    top: 30px;
+    left: 61px;
+    top: 0px;
+    top: -7px;
+    height: 37px;
   }
 
   .second-navbar {
@@ -640,11 +699,15 @@ body {
     backdrop-filter: blur(10px);
   }
 
+  .helpjuice-logo {
+    display: none;
+  }
+
   .second-navbar li {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 600;
     color: var(--gray);
-    margin-bottom: 25px;
+    margin-bottom: 5px;
   }
 
   .nav-links {
@@ -652,13 +715,37 @@ body {
     margin: 50px;
   }
 
+  .intro-section {
+    width: 467px;
+  }
+
   .rightSide-navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .vertical-line {
     display: none;
   }
 
-  .thirdNav {
-    display: none;
+  .menu-nav {
+    width: 310px;
+    height: 50px;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
   }
+
+  .thirdNav {
+    padding-left: 18px;
+  }
+
+  .inputForm {
+    background-color: #0b0f27;
+    border: none;
+  }
+
 
   .hero {
     flex-direction: column;
@@ -758,8 +845,6 @@ body {
   .wrap--cards {
     flex-direction: column;
     overflow: hidden;
-
-    /* width: 100vw; */
     padding-left: 0;
   }
 
@@ -777,4 +862,5 @@ body {
     width: 270px;
     padding: 7px;
   }
+
 }
