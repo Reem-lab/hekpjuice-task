@@ -62,7 +62,7 @@ In the project directory, you can run:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MrRamoun/WEBDEV/issues).
+Feel free to check the [issues page](https://github.com/Reem-lab/hekpjuice-task/issues).
 
 ## Show your support
 
