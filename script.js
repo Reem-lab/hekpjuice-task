@@ -3,7 +3,6 @@ const mainNav = document.querySelector('.second-navbar');
 const exitIcon = document.querySelector('.exit');
 const navLinks = document.querySelectorAll('.nav-links li');
 const body = document.querySelector('body');
-
 const closeBtn = document.querySelector('.closebtn')
 const topNavBar = document.querySelector('.top-navbar');
 const rightSideImg = document.querySelector('.rightSide-img')
@@ -15,10 +14,7 @@ closeBtn.addEventListener('click', () => {
 
 closeImg.addEventListener('click', () => {
   rightSideImg.classList.add('rightSideImg-hidden');
-  // rightSideImg.classList.add('.display-hidden');
 })
-
-
 
 const removeMenu = () => {
   mainNav.classList.remove('main-nav-active');
