@@ -128,7 +128,7 @@ body {
   background-color: #060511;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .input--form::placeholder {
@@ -592,7 +592,7 @@ body {
 }
 
 .display-hidden {
-   display: none;
+  display: none;
 }
 
 .menu-nav {
@@ -624,7 +624,7 @@ body {
   }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 750px) {
   .top-navbar {
     height: 67px;
     padding: 23px;
@@ -639,17 +639,22 @@ body {
   }
 
   .rightSide-img {
-    width: 350px;
-    left: 409px;
-    top: -619px;
-    height: 473px;
+    width: 532px;
+    left: 275px;
+    top: -471px;
+    height: 453px;
+    padding-right: 20px;
   }
 
   .closeBtn-icon {
-    left: 297px;
+    left: 319px;
   }
 
-  .meetingImg, 
+  .neon1 {
+    display: none;
+  }
+
+  .meetingImg,
   .meeting-text {
     width: 315px;
   }
@@ -659,7 +664,6 @@ body {
     width: 290px;
     padding-left: 0;
   }
-
 
   .rightSideImg-hidden {
     left: -420px;
@@ -681,8 +685,240 @@ body {
     display: block;
     cursor: pointer;
     position: relative;
-    left: 61px;
-    top: 0px;
+    left: 362px;
+    top: -11px;
+    height: 37px;
+  }
+
+  .second-navbar {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    background-color: #0b0f27;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+  }
+
+  .helpjuice-logo {
+    display: none;
+  }
+
+  .second-navbar li {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gray);
+    margin-bottom: 5px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  .intro-section {
+    margin-left: 56px;
+  }
+
+  .rightSide-navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .menu-nav {
+    width: 310px;
+    height: 50px;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .thirdNav {
+    padding-left: 18px;
+  }
+
+  .inputForm {
+    background-color: #0b0f27;
+    border: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 74px;
+  }
+
+  .middle-heading {
+    width: 250px;
+  }
+
+  .first-heading {
+    width: 512px;
+    height: 174px;
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 52px;
+  }
+
+  .paragraph-section {
+    font-size: 19px;
+    width: 356px;
+    height: 80px;
+    line-height: 29px;
+    padding-top: 5px;
+  }
+
+  .neon2 {
+    display: none;
+  }
+
+  .btns-social {
+    flex-direction: row;
+    top: 7px;
+    left: 4px;
+    padding-top: 20px;
+  }
+
+  .hero-end {
+    width: 354px;
+    gap: 12px;
+  }
+
+  .paragraph-topNavbar {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .navbar {
+    background-color: #070512;
+  }
+
+  .dashboard-img {
+    width: 550px;
+    height: 317px;
+    margin: 8px;
+    padding: 0;
+  }
+
+  .paragraphs-section {
+    align-items: center;
+  }
+
+  .paragraphs {
+    padding-right: 370px;
+  }
+
+  .normal-p {
+    width: 541px;
+    font-size: 16px;
+  }
+
+  .links-explore {
+    width: 503px;
+  }
+
+  .platforms-section {
+    padding-left: 25px;
+  }
+
+  .tertiary-heading {
+    width: 454px;
+    height: 144px;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 48px;
+  }
+
+  .wrap--cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    padding-left: 0;
+    gap: 2;
+  }
+
+  .first-card {
+    margin-left: 0;
+  }
+
+  .card {
+    width: 290px;
+    padding: 12px;
+    height: 435px;
+  }
+
+  .card-content {
+    width: 270px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .top-navbar {
+    height: 67px;
+    padding: 23px;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .main-nav-active {
+    transform: translateX(0%) !important;
+  }
+
+  .rightSide-img {
+    width: 350px;
+    left: 409px;
+    top: -619px;
+    height: 473px;
+    padding-right: 10px;
+  }
+
+  .closeBtn-icon {
+    left: 297px;
+  }
+
+  .meetingImg,
+  .meeting-text {
+    width: 315px;
+  }
+
+  .schedule-btn,
+  .startFree-btn {
+    width: 290px;
+    padding-left: 0;
+  }
+
+  .rightSideImg-hidden {
+    left: -420px;
+  }
+
+  .exit {
+    width: 23px;
+    height: 26px;
+    position: relative;
+    left: 276px;
+    top: 26px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    width: 45px;
+    opacity: 0.6;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    left: 149px;
+    top: 0;
     top: -7px;
     height: 37px;
   }
@@ -716,7 +952,7 @@ body {
   }
 
   .intro-section {
-    width: 467px;
+    margin-left: 56px;
   }
 
   .rightSide-navbar {
@@ -741,24 +977,10 @@ body {
     padding-left: 18px;
   }
 
-  .inputForm {
-    background-color: #0b0f27;
-    border: none;
-  }
-
-
   .hero {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-  }
-
-  .neon1 {
-    display: none;
-    top: -210px;
-    width: 350px;
-    left: -102px;
-    transform: rotate(45deg);
   }
 
   .middle-heading {
@@ -785,40 +1007,11 @@ body {
     display: none;
   }
 
-  .btns-social {
-    flex-direction: row;
-    top: 7px;
-    left: 4px;
-    padding-top: 20px;
-  }
-
-  .hero-end {
-    width: 354px;
-    gap: 12px;
-  }
-
-  .paragraph-topNavbar {
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  .navbar {
-    background-color: #070512;
-  }
-
   .dashboard-img {
     width: 550px;
     height: 317px;
     padding: 20px;
     margin: 8px;
-  }
-
-  .paragraphs-section {
-    align-items: center;
-  }
-
-  .paragraphs {
-    padding-right: 370px;
   }
 
   .normal-p {
@@ -843,24 +1036,9 @@ body {
   }
 
   .wrap--cards {
+    display: flex;
     flex-direction: column;
     overflow: hidden;
     padding-left: 0;
   }
-
-  .first-card {
-    margin-left: 0;
-  }
-
-  .card {
-    width: 290px;
-    padding: 12px;
-    height: 435px;
-  }
-
-  .card-content {
-    width: 270px;
-    padding: 7px;
-  }
-
 }
